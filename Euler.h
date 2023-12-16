@@ -9,7 +9,7 @@
 unsigned long long Problem_1(const unsigned int value_, const int* multiples_, const unsigned int size_);
 
 /*
-* @brief Найди сумму чётных элементов фибаначи не превышающих число 4000000
+* @brief Найди сумму чётных элементов Фибоначчи не превышающих число 4000000
 * @param value_: число фибаначи, меньше котрого ищем сумму
 * @return сумма чисел
 */

@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"function.h"
+#include "function.h"
 #include "Euler.h"
 #include "LongNumber.h"
 
@@ -50,10 +50,15 @@ int main()
 	printf("answer = %d\n", Problem_6(quantity));
 	*/
 
-
+	/*
 	printf("%d\n", Sum(1524, 100));
+	return 0;
+	*/
+
+	char str[] = "The definition of insanity? Doing the same          thing over and   over again.";
+	Contraction (str);
+	printf("%s\n", str);
 
 	return 0;
-
 
 }

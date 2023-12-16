@@ -19,4 +19,10 @@ int Prime(unsigned long long int x);
 * @return палиндром или нет
 */
 bool IsPalindrome(const unsigned int number_);
+
+/*
+* @brief заменить несколько пробелов на один
+*/
+
+void Contraction(char* str); //сокращает несколько пробелов в один
 #endif

@@ -1,4 +1,5 @@
 #include "function.h"
+#include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
 
@@ -33,4 +34,30 @@ bool IsPalindrome(const unsigned int number_)
 	}
 
 	return number_ == reverse;
+}
+
+void Contraction(char* str) {
+
+	char* source = str;
+	char* place = str;
+	bool spaceFound = false;
+
+	while (*source) {
+
+		if (*source == ' ') {
+
+			if (!spaceFound) {
+				*place++ = *source;
+				spaceFound = true;
+
+			}
+		}
+		else {
+
+			*place++ = *source;
+			spaceFound = false;
+		}
+		source++;
+	}
+	*place = '\0';
 }
