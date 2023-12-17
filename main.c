@@ -2,6 +2,7 @@
 #include "function.h"
 #include "Euler.h"
 #include "LongNumber.h"
+#include "structure.h"
 
 #define SIZE 2
 
@@ -58,6 +59,9 @@ int main()
 	char str[] = "The definition of insanity? Doing the same          thing over and   over again.";
 	Contraction (str);
 	printf("%s\n", str);
+
+	readEngineers("text.txt");
+	printEngineers();
 
 	return 0;
 
